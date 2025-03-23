@@ -3,34 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
-    <link rel="stylesheet" href="main.css" />
-    
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="weather-card">
-            <div class="weather-info">
-                <h2 id="city">City</h2>
-                <h3 id="date">Date</h3>
-                <img id="weather-icon" src="img/weather.png" alt="Weather Icon">
-                <h1 id="temp">--°C</h1>
-                <p id="description">Weather Description</p>
-                <p>Humidity: <span id="humidity">--°C</span></p>
-                <p>Wind: <span id="wind-speed">-- m/s</span></p>
-            </div>
-            <div class="forecast">
-                <div class="day" id="day1"></div>
-                <div class="day" id="day2"></div>
-                <div class="day" id="day3"></div>
-                <div class="day" id="day4"></div>
-            </div>
-            <input type="text" id="city-input" placeholder="Enter city...">
-            <button onclick="getWeather()">Search</button>
+    <div class="weather-container">
+        <div class="weather-box">
+            <h2 id="cityName">City</h2>
+            <p id="date"></p>
+            <img id="weatherIcon" src="./img/weather.png" alt="Weather Icon">
+            <h1 id="temperature">--°C</h1>
+            <p id="weatherDescription">Weather Description</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="windSpeed">Wind: -- m/s</p>
+            <input type="text" id="cityInput" placeholder="Enter city...">
+            <button id="searchButton">Search</button>
         </div>
     </div>
-
 
     <script src="main.js"></script>
 </body>
